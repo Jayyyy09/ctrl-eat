@@ -30,7 +30,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/image
+    - assets/image/donuts.png
+    - assets/image/LOGO.png
 
 fonts:
   - family: Roboto

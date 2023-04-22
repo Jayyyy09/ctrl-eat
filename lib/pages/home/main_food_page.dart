@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
-import '/pages/home/food_page_body.dart';
 import 'package:ctrleat/widgets/big_text.dart';
 import 'package:ctrleat/widgets/small_text.dart';
+
+import 'food_page_body.dart';
+import 'color.dart';
 import '/utils/dimensions.dart';
-import '/pages/home/color.dart';
 
 class MainFoodPage extends StatefulWidget {
-  const MainFoodPage({required Key key}) : super(key: key);
+  const MainFoodPage({super.key});
 
   @override
   State<MainFoodPage> createState() => _MainFoodPageState();
@@ -16,15 +17,13 @@ class MainFoodPage extends StatefulWidget {
 class _MainFoodPageState extends State<MainFoodPage> {
   @override
   Widget build(BuildContext context) {
-    //print("current height is ${MediaQuery.of(context).size.height}");
+    //print("current width is ${MediaQuery.of(context).size.width}");
     return Scaffold(
       body: Column(
         children: [
-          //showing the header
           Container(
               child: Container(
-            margin: EdgeInsets.only(
-                top: Dimensions.height45, bottom: Dimensions.height15),
+            margin: EdgeInsets.only(top: 45, bottom: 15),
             padding: EdgeInsets.only(
                 left: Dimensions.width20, right: Dimensions.width20),
             child: Row(
@@ -32,18 +31,16 @@ class _MainFoodPageState extends State<MainFoodPage> {
               children: [
                 Column(
                   children: [
-                    BigText(text: "CTRL + Eat", color: AppColors.orange),
-                    Row(
-                      children: [
-                        SmallText(text: "GJC Digital Canteen"),
-                        Icon(Icons.arrow_drop_down_rounded)
-                      ],
-                    )
+                    BigText(
+                      text: "CTRL + Eat",
+                      color: AppColors.orange,
+                    ),
+                    SmallText(text: "GJC Digital Canteen")
                   ],
                 ),
                 Center(
                   child: Container(
-                    width: Dimensions.width45,
+                    width: Dimensions.height45,
                     height: Dimensions.height45,
                     child: Icon(Icons.search,
                         color: Colors.white, size: Dimensions.iconSize24),

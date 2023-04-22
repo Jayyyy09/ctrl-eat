@@ -1,9 +1,15 @@
+import 'package:ctrleat/pages/food/indemand_food_detail.dart';
+import 'package:ctrleat/pages/food/recommended_food_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'home/main_food_page.dart';
+import 'controller/indemand_product_controller.dart';
+import 'pages/home/main_food_page.dart';
+import 'package:ctrleat/helper/dependencies.dart' as dep;
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dep.init();
   runApp(const MyApp());
 }
 
@@ -13,34 +19,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    Get.find<InDemandProductController>().getInDemandProductList();
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'CTRL+Eat',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MainFoodPage(),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-  final String title;
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: const Center(
-        child: Text("Welcome to Flutter!"),
-      ),
+      home: RecommendedFoodDetail(),
     );
   }
 }

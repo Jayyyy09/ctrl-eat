@@ -1,37 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:get/get.dart';
 
 import '../utils/dimensions.dart';
 
-class BigText extends StatefulWidget {
+class BigText extends StatelessWidget {
+  Color? color;
   final String text;
-  final double size;
-  final Color color;
-  final TextOverflow overflow;
-
-  const BigText(
+  double size;
+  TextOverflow overflow;
+  BigText(
       {Key? key,
+      this.color = const Color(000000),
       required this.text,
-      this.size = 0,
-      this.color = Colors.black,
-      this.overflow = TextOverflow.ellipsis})
+      this.size = 20,
+      this.overflow = TextOverflow.fade,
+      int? maxLines})
       : super(key: key);
-
-  @override
-  State<StatefulWidget> createState() => BigTextState();
-}
-
-class BigTextState extends State<BigText> {
-  double get size => widget.size;
 
   @override
   Widget build(BuildContext context) {
     return Text(
-      widget.text,
-      overflow: widget.overflow,
-      maxLines: 1,
+      text,
+      maxLines: 2,
+      overflow: overflow,
       style: TextStyle(
         fontFamily: 'Roboto',
-        color: widget.color,
+        color: color,
         fontSize: size == 0 ? Dimensions.font20 : size,
         fontWeight: FontWeight.bold,
       ),

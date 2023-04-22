@@ -1,7 +1,9 @@
+import 'package:ctrleat/pages/food/indemand_food_detail.dart';
+import 'package:ctrleat/pages/home/food_page_body.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'home/main_food_page.dart';
+import 'controller/indemand_product_controller.dart';
+import 'pages/home/main_food_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,22 +15,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application
   @override
   Widget build(BuildContext context) {
+    Get.find<InDemandProductController>().getInDemandProductList();
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MainFoodPage(),
+      home: FoodPageBody(),
     );
-  }
-}
-
-class RouteGenerator {
-  static const String splash = '/';
-
-  static Route<dynamic> generateRoute(RouteSettings settings) {
-    // TODO: implement generateRoute
-    throw UnimplementedError();
   }
 }

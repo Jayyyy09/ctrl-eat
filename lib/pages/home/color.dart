@@ -7,4 +7,5 @@ class AppColors {
   static final Color brightgreen = const Color(0xFF00B100);
   static final Color white = const Color(0xFFFFFFFF);
   static final Color lightblue = const Color(0xFF89dad0);
+  static final Color lightgreen = Color(0xFFccfbbb);
 }
