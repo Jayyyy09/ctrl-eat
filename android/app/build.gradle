@@ -24,6 +24,9 @@ if (flutterVersionName == null) {
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+apply plugin: 'android'
+apply plugin: 'newrelic'
+
 
 android {
     compileSdkVersion 33
@@ -71,4 +74,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.newrelic.agent.android:android-agent:AGENT_VERSION'
 }

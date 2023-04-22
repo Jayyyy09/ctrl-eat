@@ -28,11 +28,15 @@ class RecommendedFoodDetail extends StatelessWidget {
               preferredSize: Size.fromHeight(20),
               child: Container(
                 child: Center(
-                    child: BigText(size: Dimensions.font26, text: "Do Donuts")),
+                    child: BigText(
+                  size: Dimensions.font26,
+                  text: "Do Donuts",
+                  color: Colors.amber,
+                )),
                 width: double.maxFinite,
                 padding: EdgeInsets.only(top: 5, bottom: 10),
                 decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: Colors.white,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(Dimensions.radius20),
                         topRight: Radius.circular(Dimensions.radius20))),

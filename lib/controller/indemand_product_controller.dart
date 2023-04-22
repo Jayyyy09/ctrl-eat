@@ -10,8 +10,10 @@ class InDemandProductController extends GetxController {
   Future<void> getInDemandProductList() async {
     Response response = await inDemandProductRepo.getInDemandProductList();
     if (response.statusCode == 200) {
+      print("got products");
       _indemandProductList = [];
       //_indemandProductList.addAll();
+      print(_indemandProductList);
       update();
     } else {}
   }

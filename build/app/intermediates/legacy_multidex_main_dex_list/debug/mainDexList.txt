@@ -175,6 +175,12 @@ com/google/android/material/transition/platform/MaterialContainerTransform$FitMo
 com/google/android/material/transition/platform/MaterialContainerTransform$TransitionDirection.class
 com/google/android/material/transition/platform/MaterialSharedAxis$Axis.class
 com/google/android/material/transition/platform/SlideDistanceProvider$GravityFlag.class
+com/newrelic/agent/android/instrumentation/SkipTrace.class
+com/newrelic/agent/android/instrumentation/WrapReturn.class
+com/newrelic/com/google/gson/annotations/Expose.class
+com/newrelic/com/google/gson/annotations/SerializedName.class
+com/newrelic/com/google/gson/annotations/Since.class
+com/newrelic/com/google/gson/annotations/Until.class
 io/flutter/FlutterInjector.class
 io/flutter/app/FlutterApplication.class
 io/flutter/embedding/engine/loader/FlutterLoader.class

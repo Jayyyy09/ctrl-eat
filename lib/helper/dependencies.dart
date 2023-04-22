@@ -5,8 +5,8 @@ import '../data/repository/indemand_product_repo.dart';
 
 Future<void> init() async {
   // api client
-  Get.lazyPut(() => ApiClient(
-      appBaseUrl: "https://net950.wordpress.com/sample-page/")); // url uli
+  Get.lazyPut(
+      () => ApiClient(appBaseUrl: "https://net950.wordpress.com/")); // url uli
 
   // repos
   Get.lazyPut(() => InDemandProductRepo(apiClient: Get.find()));

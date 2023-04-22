@@ -7,6 +7,6 @@ class InDemandProductRepo extends GetxService {
 
   Future<Response> getInDemandProductList() async {
     return await apiClient
-        .getData("https://net950.wordpress.com/sample-page/api/product/");
+        .getData("https://net950.wordpress.com/api/product/list");
   }
 }

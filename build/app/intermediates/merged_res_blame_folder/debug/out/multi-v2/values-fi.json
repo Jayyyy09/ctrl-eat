@@ -4,7 +4,7 @@
             "outputFile": "com.example.ctrleat.app-mergeDebugResources-18:/values-fi/values-fi.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ajlag\\.gradle\\caches\\transforms-3\\32540d2a019fd10827bff31d8766fe9b\\transformed\\material-1.4.0\\res\\values-fi\\values-fi.xml",
+                    "source": "C:\\Users\\ajlag\\.gradle\\caches\\transforms-3\\9731a0572671981a910049dcd2f68aa2\\transformed\\material-1.4.0\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ajlag\\.gradle\\caches\\transforms-3\\e937b68345cad7d61818d312b6b4c7ca\\transformed\\appcompat-1.2.0\\res\\values-fi\\values-fi.xml",
+                    "source": "C:\\Users\\ajlag\\.gradle\\caches\\transforms-3\\6118819a216c1fd89f0f77c84eeb1107\\transformed\\appcompat-1.2.0\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ajlag\\.gradle\\caches\\transforms-3\\4ca28c4a71705f8a687c69dda140a277\\transformed\\core-1.6.0\\res\\values-fi\\values-fi.xml",
+                    "source": "C:\\Users\\ajlag\\.gradle\\caches\\transforms-3\\9e61a1558cc32661bf7107164e18fa73\\transformed\\core-1.6.0\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
